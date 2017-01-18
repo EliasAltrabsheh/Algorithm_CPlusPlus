@@ -1,13 +1,15 @@
-/* This program fucses on using links as data structer types. This is realted to how array are constructed .
-With array the insertion is slow. (Vectors differ from this as they can be resized).
-with links we use pointers to link to other objects improving preformance massively.
+/* This program focuses on using links as data structure types. This is related to how array is constructed.
+With an array the insertion is slow. (Vectors differ from this as they can be resized).
+with links, we use pointers to link to other objects improving performance massively.
 
-With array you can access data using index number. With links you have to use relations to find particular data set.
+With an array, you can access data using index number. With links, you have to use relations to find particular data set.
 
-To implment a simple link prorgarm we use the follwing :
+To implement a simple link program we use the following :
  1) Inserting an item at the beginning of the list
  2) Removing the item at the beginning of the list
  3) Iterating through the list to display its contents*/
+
+
 
 #include <iostream>
 
@@ -73,7 +75,7 @@ void displayList()
 
 int main()
 {
-  Linklist theList;    //make new list
+  Linklist theList;    //make new list using class
 
   theList.insertFirst(22, 2.99);         //insert four items
   theList.insertFirst(44, 4.99);

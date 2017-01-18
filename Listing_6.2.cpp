@@ -1,5 +1,5 @@
-/* This program looks at a stack methodolgy of storing and accesing data. We use the stack templete to give us a reverse order for words with strings.
- Yes this can be dionw in the main with no construction of class member but it more effective and less prone for errors using the stack functinallity.
+/* This program looks at a stack methodology of storing and accessing data. We use the stack template to give us a reverse order for words with strings.
+ Yes, this can be done in the main with no construction of class member but it more effective and less prone to errors using the stack functionality.
 */
 #include <iostream>
 #include <vector>

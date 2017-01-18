@@ -1,3 +1,7 @@
+/*This is a sample program to deal with Vectors.
+
+Vectors has the benefits of resizes the vector unlike the size of the array remains fixed with initlazation.
+*/
 
 #include <iostream>
 #include <vector> // This vector header files allows us to use vectors stl files . Its usefull for handelling sizing of vector by using empty(); and size() elements of its class
@@ -6,7 +10,7 @@ using namespace std;
 class LowArray
 {
 private:
-  vector<double> v;
+  vector<double> v; // Define vector
 
 public:
 
