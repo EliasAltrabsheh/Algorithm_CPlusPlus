@@ -6,17 +6,17 @@ This Repository Involves self-taught notes/code covering the methodologies of Al
 
 
 The topics covered are:
-*Arrays
-*Ordered Array
-*The Bubble and Insertion sort 
-*Stacks 
-*Queues and priority 
-*Linked Lists
-*Specialized Lists 
-*Recursion 
-*Quick sort 
-*Binary trees
-*Red-Black Trees
-*2-3-4 Trees
-*Hash Tables
-*Quadratic Probing 
+* Arrays
+* Ordered Array
+* The Bubble and Insertion sort 
+* Stacks 
+* Queues and priority 
+* Linked Lists
+* Specialized Lists 
+* Recursion 
+* Quick sort 
+* Binary trees
+* Red-Black Trees
+* 2-3-4 Trees
+* Hash Tables
+* Quadratic Probing 
