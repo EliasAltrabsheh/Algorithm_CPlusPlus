@@ -1,4 +1,20 @@
 /* This sample complements 2.3 but with an improved data structure storage.  As we now have a class we no longer use indexing method and replaced by functions.
+In array we look at following in terms of data Structring run time:
+
+for searching algorthim with NO duplicates:
+
+ ● Search N/2 comparsions
+ ● Insertion No Comparisons , one move
+ ● Deletion N/2 comparisons, N/2 move
+
+for searching algorthim with duplicates:
+
+● Search N comparsions
+● Insertion No Comparisons , one move
+● Deletion N comparisons, N/2 move
+
+ 
+
 */
 
 #include <iostream>
