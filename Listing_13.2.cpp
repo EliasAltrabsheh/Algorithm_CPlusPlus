@@ -6,6 +6,16 @@
 2. Call ourselves to sort the left group.
 3. Call ourselves again to sort the right group.
 
+In this hour, you’ve learned the following:
+● To partition an array is to divide it into two subarrays, one of which holds items with key values less than a specified value, while the other holds items with keys greater or equal to this value.
+● The pivot value is the value that determines into which group an item will go during partitioning; items smaller than the pivot value go in the left group, larger items go in the right group.
+● Partitioning operates in linear O(N) time,making N plus 1 or 2 comparisons and fewer than N/2 swaps. ● The partitioning algorithm may require extra tests in its inner while loops to prevent the indices running off the ends of the array. ● The quicksort() function partitions an array and then calls itself twice recursively to sort the two resulting subarrays.
+● The pivot value for a partition in quicksort is the key value of a specific item, called the pivot.
+● In a simple version of quicksort, the pivot can always be the item at the right end of the subarray.
+● During the partition the pivot is placed out of the way on the right, and is not involved in the partitioning process.
+● Later the pivot is swapped again, into the space between the two partitions. This is its final sorted position.
+
+
 The quick sort
 */
 
@@ -17,8 +27,11 @@ using namespace std;
 
 class ArrayIns
 {
-  private: vector<double>(theVect);         //vector of doubles
-  int nElems;                      //number of data items public: //-------------------------------------------------------------
+  private:
+    vector<double>(theVect);         //vector of doubles
+    int nElems;                      //number of data items public: //-------------------------------------------------------------
+
+  public:
   ArrayIns(int max) : nElems(0)       //constructor
   { theVect.resize(max); }
   //size the vector } //-------------------------------------------------------------
@@ -65,6 +78,7 @@ class ArrayIns
          break;                    //   partition done
       else                         //not crossed, so
          swap(leftMark, rightMark); //  swap elements
+
     }  //end while(true)
     return leftMark;                //return partition
   }  //end partitionIt()
@@ -86,4 +100,12 @@ class ArrayIns
     srand( static_cast<unsigned>(time(&aTime)) );  //seed randoms
 
     for(int j=0; j<maxSize; j++)        //fill array with
-    {                                //random numbers double n = rand() % 99; arr.insert(n); } arr.display();                      //display items arr.quickSort();                    //quicksort them arr.display();                      //display them again return 0; }  //end main()
+    {                                //random numbers
+      double n = rand() % 99;
+      arr.insert(n);
+    }
+    arr.display();                      //display items
+    arr.quickSort();                    //quicksort them
+    arr.display();                      //display them again
+    return 0;
+  }  //end main()
